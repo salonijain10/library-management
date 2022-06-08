@@ -57,7 +57,7 @@ Backend:
  Screenshots:
  
           Student SignUp:
-          ![Screenshot (114)](https://user-images.githubusercontent.com/67259410/172551656-2b72d30b-0e5b-48db-8788-6e67b75ced84.png)
+          ![](Screenshot/Screenshot%20(114))
         
           Student Login:
           ![Screenshot (115)](https://user-images.githubusercontent.com/67259410/172551749-961c8f39-3216-475c-9b95-ee6cacea5c62.png)
