@@ -56,8 +56,11 @@ Backend:
           
         
 Changes required in setting.py:
+
 Add your mysql database details in settings.py:
+
 DATABASES = {
+
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': '<dbname>',
