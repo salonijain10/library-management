@@ -54,8 +54,31 @@ Backend:
           edit view: to update book details.
           delete view: to delete a books emtry.
           
+Screenshots:
 
+Student Signup:
+![](Screenshot/signup.png)
 
+Student Login:
+![](Screenshot/login.png)
+
+Student view:
+![](Screenshot/viewstudent.png)
+
+Admin Signup:
+![](Screenshot/adminsignup.png)
+
+Admin Login:
+![](Screenshot/adminlogin.png)
+
+Admin View:
+![](Screenshot/viewadmin.png)
+
+Admin Add new book:
+![](Screenshot/add.png)
+
+Admin Update book:
+![](Screenshot/update.png)
           
           
           
