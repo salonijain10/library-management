@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ViewBookStudent</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+
+
+    <style type="text/css">
+        body {
+            color: #aa082e;
+            background-color: #b6bde7 !important;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .form-control {
+            border-color: #eee;
+            min-height: 41px;
+            box-shadow: none !important;
+        }
+
+        .form-control:focus {
+            border-color: #5cd3b4;
+        }
+
+        .form-control,
+        .btn {
+            border-radius: 3px;
+        }
+
+        .signup-form {
+            width: 1400px;
+            margin: 0 auto;
+            padding: 30px 0;
+        }
+
+        .signup-form h2 {
+            color: #333;
+            margin: 0 0 30px 0;
+            display: inline-block;
+            padding: 0 30px 10px 0;
+            border-bottom: 3px solid #ffffff;
+        }
+
+        .signup-form form {
+            color: #999;
+            border-radius: 3px;
+            margin-bottom: 15px;
+            background: #fff;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+        }
+
+        .signup-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .signup-form label {
+            font-weight: normal;
+            font-size: 13px;
+        }
+
+        .signup-form input[type="checkbox"] {
+            margin-top: 2px;
+        }
+
+        .signup-form .btn {
+            font-size: 16px;
+            font-weight: bold;
+            background: #161df0;
+            border: none;
+            margin-top: 20px;
+            min-width: 140px;
+        }
+
+        .signup-form .btn:hover,
+        .signup-form .btn:focus {
+            background: #41cba9;
+            outline: none !important;
+        }
+
+        .signup-form a {
+            color: #2b04ff;
+
+            text-decoration: underline;
+        }
+
+        .signup-form a:hover {
+            text-decoration: none;
+        }
+
+        .signup-form form a {
+            color: #5cd3b4;
+            text-decoration: none;
+        }
+
+        .signup-form form a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body style="background-color:#b6bde7;">
+    <br>
+    <br>
+    <center>
+        <h3 style=" margin-bottom: 0px;" class='alert alert-success'>Welcome to the Library</h3>
+    </center>
+    <div class="signup-form">
+        <form method="post" class="form-horizontal" action="/update/{{books.id}}">
+            {% csrf_token %}
+            <center>
+                <h2>Update BOOK IN LIBRARY</h2>
+            </center>
+            <center>
+                <div style="border: 2px solid black ; padding-bottom:15px; width:1000px;">
+
+                    <div class=" max-w-xs sm:flex-row mt-4 sm:items-center"></div>
+                    <label style="color: black; font-weight: bold;font-size:large;" for="bookname">Book name</label>
+                    <input class="px-2 py-1 bg-transparent border-white border-2 h-lg mt-2 rounded "
+                        value="{{ books.bname }}" name="bname" type="text" placeholder="bookname" style="color: black;"
+                        required />
+
+
+                        <div class=" max-w-xs sm:flex-row mt-4 sm:items-center"></div>
+                    <label style="color: black; font-weight: bold;font-size:large;" for="authorname">Author name</label>
+                    <input class="px-2 py-1 bg-transparent border-white border-2 mt-2  rounded "
+                        value="{{ books.author }}" style="color: black;" name="author" type="text"
+                        placeholder="authorname" required />
+
+
+                        <div class=" max-w-xs sm:flex-row mt-4 sm:items-center"></div>
+                    <label style="color: black; font-weight: bold;font-size:large;" for="isbn">ISBN</label>
+                    <input class="px-2 py-1 bg-transparent border-white border-2 h-lg mt-2 rounded "
+                        value="{{ books.isbn }}" style="color: black;" name="isbn" type="number" id="isbn"
+                        placeholder="ISBN" required />
+
+
+
+                        <div class=" max-w-xs sm:flex-row mt-4 sm:items-center"></div>
+                    <label style="color: black; font-weight: bold;font-size:large;" for="category">Category</label>
+                    <input class="px-2 py-1 bg-transparent border-white border-2 mt-2  rounded "
+                        value="{{ books.category }}" style="color: black;" name="category" type="text"
+                        placeholder="category" required />
+
+                    <br>
+                    <br>
+                    <button class="text-black hover:shadow-md text-xl rounded bg-black-500 px-4 py-2 mt-8 "
+                        type="submit">Update</button>
+                    <br>
+                    <br>
+                    <div class="text-center">Add New Book In Library<a href="/addbook/">Click here</a></div>
+                </div>
+            </center>
+        </form>
+    </div>
+</body>
+
+</html>

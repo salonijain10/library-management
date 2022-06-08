@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <center>
+        <h2>Welcome to the Library</h2>
+    </center>
+    <left>
+        <h4>To View All The Books Click <a href="/viewbookstudent/">Here</a></h4>
+    </left>
+</form>
+
+{% endblock content %}
