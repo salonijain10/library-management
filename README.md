@@ -54,36 +54,7 @@ Backend:
           edit view: to update book details.
           delete view: to delete a books emtry.
           
- Screenshots:
- 
-          Student SignUp:
-          ![](Screenshot/Screenshot%20(114))
-        
-          Student Login:
-          ![Screenshot (115)](https://user-images.githubusercontent.com/67259410/172551749-961c8f39-3216-475c-9b95-ee6cacea5c62.png)
-          
-          Student View Book:
-          ![Screenshot (116)](https://user-images.githubusercontent.com/67259410/172551775-1a65300b-0d45-4498-9552-458afc05a6da.png)
 
-          
-          Admin Signup:
-          ![Screenshot (117)](https://user-images.githubusercontent.com/67259410/172551800-547a7186-5fdd-40b7-86b1-4885bbe04046.png)
-
-          
-          Admin Login:
-          ![Screenshot (118)](https://user-images.githubusercontent.com/67259410/172551829-4313626f-fa97-4bc5-8d7c-e1a11c28f61a.png)
-
-          
-          Admin Add Books:
-          ![Screenshot (121)](https://user-images.githubusercontent.com/67259410/172551983-ee5294e6-0dfc-404d-ae5a-d9b49b0cb14d.png)
-
-          
-          Admin View Books:
-          ![Screenshot (119)](https://user-images.githubusercontent.com/67259410/172551850-fb5859a1-6efa-4cdc-8608-28a44e62a279.png)
-
-          
-          Admin Update Books:
-          ![Screenshot (120)](https://user-images.githubusercontent.com/67259410/172551868-ac747e3b-98f7-437d-b43c-21473293c577.png)
 
           
           
