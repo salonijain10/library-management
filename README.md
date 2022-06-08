@@ -54,6 +54,20 @@ Backend:
           edit view: to update book details.
           delete view: to delete a books emtry.
           
+        
+Changes required in setting.py:
+Add your mysql database details in settings.py:
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': '<dbname>',
+        'USER': 'root',
+        'PASSWORD': '<password>',
+        'HOST': 'localhost',
+        'PORT': '3306',        
+    }
+}
+          
 Screenshots:
 
 Student Signup:
